@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "import { __decorate } from \"tslib\";\nimport { BrowserModule } from '@angular/platform-browser';\nimport { NgModule } from '@angular/core';\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { CreateEmployeeComponent } from './employee/create-employee/create-employee.component';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { EmployeeService } from './service/employee.service';\nimport { HttpClientModule } from '@angular/common/http';\nimport { EmployeeListComponent } from './employee/employee-list/employee-list.component';\nimport { UpdateEmployeeComponent } from './employee/update-employee/update-employee.component';\nimport { DataTablesModule } from 'angular-datatables';\nlet AppModule = class AppModule {};\nAppModule = __decorate([NgModule({\n  declarations: [AppComponent, CreateEmployeeComponent, EmployeeListComponent, UpdateEmployeeComponent],\n  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, ReactiveFormsModule, DataTablesModule],\n  providers: [EmployeeService],\n  bootstrap: [AppComponent]\n})], AppModule);\nexport { AppModule };",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

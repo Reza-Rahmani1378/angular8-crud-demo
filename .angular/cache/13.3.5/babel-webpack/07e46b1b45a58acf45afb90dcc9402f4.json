@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "import { __decorate } from \"tslib\";\nimport { NgModule } from '@angular/core';\nimport { RouterModule } from '@angular/router';\nimport { CreateEmployeeComponent } from './employee/create-employee/create-employee.component';\nimport { EmployeeListComponent } from './employee/employee-list/employee-list.component';\nimport { UpdateEmployeeComponent } from './employee/update-employee/update-employee.component';\nconst routes = [{\n  path: '',\n  redirectTo: 'employee',\n  pathMatch: 'full'\n}, {\n  path: 'add',\n  component: CreateEmployeeComponent\n}, {\n  path: 'employees',\n  component: EmployeeListComponent\n}, {\n  path: 'update/:id',\n  component: UpdateEmployeeComponent\n}];\nlet AppRoutingModule = class AppRoutingModule {};\nAppRoutingModule = __decorate([NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})], AppRoutingModule);\nexport { AppRoutingModule };",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

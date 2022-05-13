@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "import { environment } from 'src/environments/environment';\nimport * as i0 from \"@angular/core\";\nimport * as i1 from \"@angular/common/http\";\nexport let EmployeeService = /*#__PURE__*/(() => {\n  class EmployeeService {\n    constructor(http) {\n      this.http = http;\n      this.baseUrl = environment.baseUrl + '/api/employees/';\n    }\n\n    getEmployees() {\n      return this.http.get(this.baseUrl);\n    }\n\n    getEmployeeById(id) {\n      return this.http.get(this.baseUrl + id);\n    }\n\n    createEmployee(employee) {\n      return this.http.post(this.baseUrl, employee);\n    }\n\n    updateEmployee(id, employee) {\n      return this.http.put(this.baseUrl + employee.id, employee);\n    }\n\n    deleteEmployee(id) {\n      return this.http.delete(this.baseUrl + id);\n    }\n\n  }\n\n  EmployeeService.ɵfac = function EmployeeService_Factory(t) {\n    return new (t || EmployeeService)(i0.ɵɵinject(i1.HttpClient));\n  };\n\n  EmployeeService.ɵprov = /*@__PURE__*/i0.ɵɵdefineInjectable({\n    token: EmployeeService,\n    factory: EmployeeService.ɵfac\n  });\n  return EmployeeService;\n})();",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

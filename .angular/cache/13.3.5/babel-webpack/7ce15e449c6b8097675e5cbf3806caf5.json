@@ -1,0 +1,33 @@
+{
+  "ast": null,
+  "code": "/**\n * @license\n *\n * Use of this source code is governed by an MIT-style license that can be\n * found in the LICENSE file at https://raw.githubusercontent.com/l-lin/angular-datatables/master/LICENSE\n */\nimport { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { DataTableDirective } from './angular-datatables.directive';\nimport * as i0 from \"@angular/core\";\n\nvar DataTablesModule =\n/** @class */\nfunction () {\n  function DataTablesModule() {}\n\n  DataTablesModule.forRoot = function () {\n    return {\n      ngModule: DataTablesModule\n    };\n  };\n\n  DataTablesModule.ɵfac = function DataTablesModule_Factory(t) {\n    return new (t || DataTablesModule)();\n  };\n\n  DataTablesModule.ɵmod = /* @__PURE__ */i0.ɵɵdefineNgModule({\n    type: DataTablesModule\n  });\n  DataTablesModule.ɵinj = /* @__PURE__ */i0.ɵɵdefineInjector({\n    imports: [[CommonModule]]\n  });\n  return DataTablesModule;\n}();\n\nexport { DataTablesModule };\n\n(function () {\n  (typeof ngDevMode === \"undefined\" || ngDevMode) && i0.ɵsetClassMetadata(DataTablesModule, [{\n    type: NgModule,\n    args: [{\n      imports: [CommonModule],\n      declarations: [DataTableDirective],\n      exports: [DataTableDirective]\n    }]\n  }], null, null);\n})();",
+  "map": {
+    "version": 3,
+    "sources": [
+      "D:/Project for Dadeh Pardaz Afagh/crud/node_modules/angular-datatables/src/angular-datatables.module.js"
+    ],
+    "names": [
+      "NgModule",
+      "CommonModule",
+      "DataTableDirective",
+      "i0",
+      "DataTablesModule",
+      "forRoot",
+      "ngModule",
+      "ɵfac",
+      "ɵmod",
+      "ɵinj",
+      "type",
+      "args",
+      "imports",
+      "declarations",
+      "exports"
+    ],
+    "mappings": "AAAA;AACA;AACA;AACA;AACA;AACA;AACA,SAASA,QAAT,QAAyB,eAAzB;AACA,SAASC,YAAT,QAA6B,iBAA7B;AACA,SAASC,kBAAT,QAAmC,gCAAnC;AACA,OAAO,KAAKC,EAAZ,MAAoB,eAApB;;AACA,IAAIC,gBAAgB;AAAG;AAAe,YAAY;AAC9C,WAASA,gBAAT,GAA4B,CAC3B;;AACDA,EAAAA,gBAAgB,CAACC,OAAjB,GAA2B,YAAY;AACnC,WAAO;AACHC,MAAAA,QAAQ,EAAEF;AADP,KAAP;AAGH,GAJD;;AAKAA,EAAAA,gBAAgB,CAACG,IAAjB;AAAA,qBAA6GH,gBAA7G;AAAA;;AACAA,EAAAA,gBAAgB,CAACI,IAAjB,kBADmGL,EACnG;AAAA,UAA8GC;AAA9G;AACAA,EAAAA,gBAAgB,CAACK,IAAjB,kBAFmGN,EAEnG;AAAA,cAA0I,CAACF,YAAD,CAA1I;AAAA;AACA,SAAOG,gBAAP;AACH,CAZqC,EAAtC;;AAaA,SAASA,gBAAT;;AACA;AAAA,qDANuGD,EAMvG,mBAA2FC,gBAA3F,EAAyH,CAAC;AAC9GM,IAAAA,IAAI,EAAEV,QADwG;AAE9GW,IAAAA,IAAI,EAAE,CAAC;AACCC,MAAAA,OAAO,EAAE,CAACX,YAAD,CADV;AAECY,MAAAA,YAAY,EAAE,CAACX,kBAAD,CAFf;AAGCY,MAAAA,OAAO,EAAE,CAACZ,kBAAD;AAHV,KAAD;AAFwG,GAAD,CAAzH;AAAA",
+    "sourcesContent": [
+      "/**\n * @license\n *\n * Use of this source code is governed by an MIT-style license that can be\n * found in the LICENSE file at https://raw.githubusercontent.com/l-lin/angular-datatables/master/LICENSE\n */\nimport { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { DataTableDirective } from './angular-datatables.directive';\nimport * as i0 from \"@angular/core\";\nvar DataTablesModule = /** @class */ (function () {\n    function DataTablesModule() {\n    }\n    DataTablesModule.forRoot = function () {\n        return {\n            ngModule: DataTablesModule\n        };\n    };\n    DataTablesModule.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: \"12.0.0\", version: \"13.0.1\", ngImport: i0, type: DataTablesModule, deps: [], target: i0.ɵɵFactoryTarget.NgModule });\n    DataTablesModule.ɵmod = i0.ɵɵngDeclareNgModule({ minVersion: \"12.0.0\", version: \"13.0.1\", ngImport: i0, type: DataTablesModule, declarations: [DataTableDirective], imports: [CommonModule], exports: [DataTableDirective] });\n    DataTablesModule.ɵinj = i0.ɵɵngDeclareInjector({ minVersion: \"12.0.0\", version: \"13.0.1\", ngImport: i0, type: DataTablesModule, imports: [[CommonModule]] });\n    return DataTablesModule;\n}());\nexport { DataTablesModule };\ni0.ɵɵngDeclareClassMetadata({ minVersion: \"12.0.0\", version: \"13.0.1\", ngImport: i0, type: DataTablesModule, decorators: [{\n            type: NgModule,\n            args: [{\n                    imports: [CommonModule],\n                    declarations: [DataTableDirective],\n                    exports: [DataTableDirective]\n                }]\n        }] });\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}
