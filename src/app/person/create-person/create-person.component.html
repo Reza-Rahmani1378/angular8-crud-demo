@@ -1,0 +1,86 @@
+<h3>Create Employee</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="person.firstName" name="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" id="lastName" required [(ngModel)]="person.lastName" name="lastName">
+    </div>
+
+    <div class="form-group">
+      <label for="nationalCode">National Code</label>
+      <input type="text" class="form-control" id="nationalCode" required [(ngModel)]="person.nationalCode"
+             name="nationalCode">
+    </div>
+    <div class="form-group">
+      <label for="address">Address</label>
+      <input type="text" class="form-control" id="address" required [(ngModel)]="person.address" name="address">
+    </div>
+
+    <div class="form-group">
+      <label for="birthday">Birthday</label>
+      <input type="date" class="form-control" id="birthday" required [(ngModel)]="person.birthday" name="birthday">
+    </div>
+
+
+    <!--    <div class="form-group">-->
+    <!--      <label>Gender</label>-->
+    <!--      <label>-->
+    <!--        <input type="radio" class="form-control" id="gender" required-->
+    <!--               name="gender" [(ngModel)]="person.gender" value="MALE">-->
+    <!--        Male-->
+    <!--      </label>-->
+
+    <!--      <label>-->
+    <!--        <input type="radio" class="form-control" required-->
+    <!--               name="gender" [(ngModel)]="person.gender" value="FEMALE">-->
+    <!--        Female-->
+    <!--      </label>-->
+
+    <label>Gender</label>
+    <div class="form-check">
+
+      <div class="form-group radio">
+        <label>
+          <input type="radio"
+                 [(ngModel)]="person.gender"
+                 value="MALE" name="gender">
+          Male
+        </label>
+      </div>
+    </div>
+
+    <div class="form-check">
+
+      <div class="form-group radio">
+        <label>
+          <input type="radio"
+                 [(ngModel)]="person.gender"
+                 value="FEMALE" name="gender">
+          Female
+        </label>
+      </div>
+    </div>
+
+
+    <!--    <div class="form-check">-->
+    <!--      <div class="form-group radio">-->
+    <!--        Female-->
+    <!--        <label>-->
+    <!--          <input type="radio"-->
+    <!--                 [(ngModel)]="person.gender"-->
+    <!--                 value="FEMALE" name="gender">-->
+
+    <!--        </label>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--    </div>-->
+
+    <button class="btn btn-success">Submit</button>
+  </form>
+</div>
+
